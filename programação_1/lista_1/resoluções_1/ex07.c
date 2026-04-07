@@ -65,12 +65,17 @@ int main()
                 printf("A divisao de %.1f por %.1f sera: %.2f", y, x, divisao);
             }
             break;
+
+        default:
+            printf("Opcao invalida, rode o programa novamente");
+            break;
         }
 
         break;
 
 
     default:
+        printf("Opcao invalida, rode o programa novamente");
         break;
     }
 
