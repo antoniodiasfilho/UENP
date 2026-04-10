@@ -12,12 +12,15 @@ int main()
     variacao = inicial - final;
 
     if (variacao > 0){
+
         printf("Houve uma reducao no preco");
 
     }else if (variacao <  0){
+
         printf("Houve uma aumento no preco");
 
     }else{
+        
         printf("Nao houve variacao");
 
     }

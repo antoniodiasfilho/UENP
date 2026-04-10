@@ -16,6 +16,7 @@ int main()
         qtdcafe = valor / 7;
         valor_perdido = valor - (qtdcafe * 7);
         printf("A quantidade de cafe sera de %d e o valor perdido sera de R$%d", qtdcafe, valor_perdido);
+        
     }
 
     return 0;

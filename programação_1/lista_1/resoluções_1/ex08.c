@@ -10,13 +10,17 @@ int main()
     scanf("%d", &qualidade);
 
     if(produtividade >= 7 && qualidade >= 7){
+
         printf("O desenpenho eh BOM");
 
     }else if (produtividade < 7 && qualidade < 7){
+
         printf("O desempenho eh RUIM");
 
     }else{
+
         printf("O desempenho eh REGULAR");
+        
     }
 
     return 0;

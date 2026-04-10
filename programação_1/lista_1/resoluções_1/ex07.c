@@ -8,8 +8,10 @@ int main()
 
     printf("Informe o primeiro valor: ");
     scanf("%f", &x);
+
     printf("Informe o segundo valor: ");
     scanf("%f", &y);
+
     printf("Informe o que desaja fazer:\n");
     printf("[1] - Media aritmetica entre os numeros\n[2] - Diferenca entre o maior e menor numero\n[3] - Produto entre os numeros\n[4] - Divisao entre os numeros\n" );
     scanf("%d", &opc);
@@ -25,9 +27,13 @@ int main()
     case 2:
         
         if(x > y){
+
             diferenca = x - y; 
-        }else{
+
+        } else{
+
             diferenca  = y - x;
+
         }
         printf("A diferenca entre o maior numero e o primeiro sera: %d", diferenca);
         break;
@@ -44,39 +50,52 @@ int main()
         printf("[2] - Dividir o %.1f por %.1f\n", y, x) ;
         scanf("%d", &opc2);
 
-        switch (opc2)
-        {
+        switch (opc2){
+
         case 1:
+
             if(y == 0){
+
                 printf("Nao pode dividir por zero");
                 break;
-            }else{
+
+            } else{
+
                 divisao = x / y;
                 printf("A divisao de %.1f por %.1f sera: %.2f", x, y, divisao);
+
             }
             break;
         case 2:
             
             if(x == 0){
+
                 printf("Nao pode dividir por zero");
                 break;
-            }else{
+
+            } else{
+
                 divisao = y / x;
                 printf("A divisao de %.1f por %.1f sera: %.2f", y, x, divisao);
+
             }
             break;
 
         default:
+
             printf("Opcao invalida, rode o programa novamente");
             break;
+
         }
 
         break;
 
 
     default:
+
         printf("Opcao invalida, rode o programa novamente");
         break;
+        
     }
 
     return 0;
