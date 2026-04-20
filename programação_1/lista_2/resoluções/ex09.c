@@ -10,22 +10,26 @@ int main()
         printf("\nInforme para quem vai seu voto, [0] para encerrar: ");
         scanf(" %d",&voto);
         
-        
         if(voto == 0){
             break;
-            
-        }else if(voto == 1){
-            candidato1++;
-            
-        }else if(voto == 2){
-            candidato2++;
-            
-        }else if(voto == 3){
-            candidato3++;
-            
-        }else{
-            printf("\nValor invalido\n");
-            
+        }
+        
+        switch(voto){
+            case 1:
+                candidato1++;
+                break;
+
+            case 2:
+                candidato2++;
+                break;
+
+            case 3:
+                candidato3++;
+                break;
+
+            default:
+                printf("\nValor invalido\n");
+                break;
         }
         
     }
