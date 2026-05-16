@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 
 void leVetor(int vet[], int tam){
